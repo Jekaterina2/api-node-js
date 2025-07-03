@@ -8,7 +8,7 @@ test.describe('User management API', () => {
         const response = await request.get(`${baseURL}`);
         expect(response.status()).toBe(200);
         const responseBody = await response.text()
-        expect(responseBody).toBe('[]');
+        expect(responseBody).toBe("[]");
     });
 
     test('GET /:id - should return a user by ID', async ({ request }) => {
